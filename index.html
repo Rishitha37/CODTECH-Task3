@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>My Blog</h1>
+        <div class="header-buttons">
+          <button id="themeToggle" class="btn">🌞</button>
+          <button id="newPostBtn" class="btn">New Post</button>
+        </div>
+      </header>
+
+      <main>
+        <section id="postForm" class="hidden">
+          <h2>Create New Post</h2>
+          <form id="blogForm">
+            <input type="text" id="postTitle" placeholder="Enter title" required>
+            <textarea id="postContent" placeholder="Write your post..." required></textarea>
+            <div class="form-buttons">
+              <button type="submit" class="btn btn-submit">Publish</button>
+              <button type="button" class="btn btn-cancel" id="cancelBtn">Cancel</button>
+            </div>
+          </form>
+        </section>
+
+        <section id="posts">
+          <!-- Posts will be dynamically inserted here -->
+        </section>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
